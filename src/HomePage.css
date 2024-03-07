@@ -1,14 +1,6 @@
-body {
+.landing {
     overflow: hidden;
-}
-
-.landing,
-.page-container {
     height: 100%;
-}
-
-#page-container {
-    width: 100%;
 }
 
 #image-row {
@@ -18,7 +10,7 @@ body {
 
 #image-row > img {
     display: block;
-    width: auto;
+    max-width: 450px;
     height: auto;
     float: right;
     margin: 200px;

@@ -1,22 +1,57 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App'
-import Landing from './Landing';
 import {
 	createBrowserRouter,
-	createRoutesFromElements,
-	Route,
-	RouterProvider
+	RouterProvider,
+	Link,
+	Outlet,
 } from "react-router-dom";
 
-const router = createBrowserRouter(
-	createRoutesFromElements(
-		<Route path="/" element={<Landing />}>
-			{/* <Route path="/" element={<Landing />} /> */}
-		</Route>
+import HomePage from './HomePage';
+import Gallery from './Gallery'
+import ErrorPage from './ErrorPage';
+
+import bjork from './images/bjork.png'
+
+import './index.css';
+
+function RouterRoot() {
+	return (
+		<>
+			<nav id="navbar">
+				<ul>
+					<li>
+						<Link to="/">home</Link>
+					</li>
+					<li>
+						<Link to="/gallery">gallery</Link>
+					</li>
+				</ul>
+			</nav>
+			<Outlet />
+			<div id="flying-head"><img src={bjork} alt="bjork" /></div>
+		</>
 	)
-);
+}
+
+const router = createBrowserRouter([
+	{
+		path: "/",
+		element: <RouterRoot />,
+		errorElement: <ErrorPage />,
+		children: [
+			{
+				path: "/",
+				element: <HomePage />
+			},
+			{
+				path: "gallery",
+				element: <Gallery />
+			}
+		
+		]
+	},
+]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <RouterProvider router={router} />
