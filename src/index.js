@@ -11,7 +11,7 @@ import HomePage from './HomePage';
 import Gallery from './Gallery'
 import ErrorPage from './ErrorPage';
 
-import bjork from './images/bjork.png'
+import bjork from './images/bjork.jpg'
 
 import './index.css';
 

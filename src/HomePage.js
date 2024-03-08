@@ -1,5 +1,5 @@
 import './HomePage.css'
-import homeimg from "./images/bobhome.png"
+import homeimg from "./images/bobhome.jpg"
 
 export default function HomePage() {
     return (

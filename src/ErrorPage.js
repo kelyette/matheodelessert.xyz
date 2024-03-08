@@ -1,5 +1,5 @@
 import { useRouteError } from "react-router-dom";
-import boberror from "./images/boberror.png"
+import boberror from "./images/boberror.jpg"
 import "./ErrorPage.css"
 
 export default function ErrorPage() {
