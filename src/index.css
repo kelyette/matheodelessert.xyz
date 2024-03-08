@@ -49,23 +49,60 @@ body {
 }
 
 #flying-head {
-    position: fixed;
-    width: 100px;
-    height: auto;
-    animation: fly 5s linear infinite;
+    pointer-events: none;
 }
 
-@keyframes fly {
-    0% {
-        top: 0;
-        left: 0;
-    }
-    100% {
-        top: 14vh;
-        left: 120vw;
-    }
-    0% {
-        top: 140vh;
-        left: 92vw;
-    }
+#flying-head > img {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+	top: 30vh;
+	left: -50px;
+    animation: fly 10s linear infinite;
+    transform: translate(-50%, -50%);
+    border: 1px solid #000;
+    pointer-events: none;
+}
+
+@keyframes fly { /* TODO */
+	98.001%, 0% {
+		top: 10vh;
+        left: calc(100vw + 50px)
+	}
+
+	15% {
+		top: -50px;
+        left: 50vw;
+	}
+
+	15.001%, 18% {
+		top: calc(100vh + 50px);
+        left: 30vw;
+	}
+
+	40% {
+		top: 10vh;
+        left: calc(100vw + 50px)
+	}
+
+	40.001%, 43% {
+		top: 10vh;
+        left: calc(100vw + 50px)
+	}
+
+	65% {
+		top: 10vh;
+        left: calc(100vw + 50px)
+	}
+
+	65.001%, 68% {
+		top: 10vh;
+        left: calc(100vw + 50px)
+	}
+
+	95% {
+		top: 10vh;
+        left: calc(100vw + 50px)
+	}
 }

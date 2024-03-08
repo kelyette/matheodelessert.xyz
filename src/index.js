@@ -1,4 +1,4 @@
-import React from 'react';
+import { React } from 'react';
 import ReactDOM from 'react-dom/client';
 import {
 	createBrowserRouter,
@@ -11,7 +11,7 @@ import HomePage from './HomePage';
 import Gallery from './Gallery'
 import ErrorPage from './ErrorPage';
 
-import bjork from './images/bjork.jpg'
+import bjork from './images/bjork.png'
 
 import './index.css';
 
@@ -29,7 +29,7 @@ function RouterRoot() {
 				</ul>
 			</nav>
 			<Outlet />
-			<div id="flying-head"><img src={bjork} alt="bjork" /></div>
+			<div id="flying-head"><img src={bjork} alt="bjork"/></div>
 		</>
 	)
 }
@@ -42,7 +42,7 @@ const router = createBrowserRouter([
 		children: [
 			{
 				path: "/",
-				element: <HomePage />
+				element: <HomePage/>
 			},
 			{
 				path: "gallery",
