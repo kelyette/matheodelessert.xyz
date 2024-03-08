@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.0346cc2b.css",
-    "main.js": "/static/js/main.24b72f89.js",
+    "main.css": "/static/css/main.f83c8533.css",
+    "main.js": "/static/js/main.c2254d34.js",
+    "static/media/bjork.png": "/static/media/bjork.ddd381eb0d63dfb0b4f4.png",
     "static/media/boberror.jpg": "/static/media/boberror.078263227cf8ddc31f89.jpg",
     "static/media/bob6.jpg": "/static/media/bob6.e8206cf27b639761df49.jpg",
     "static/media/bob3.jpg": "/static/media/bob3.fe1c88c3fff2cd043156.jpg",
-    "static/media/bjork.jpg": "/static/media/bjork.0970431f572c495b27bd.jpg",
     "static/media/bob15.jpg": "/static/media/bob15.ce890cd4e5036b2d552e.jpg",
     "static/media/bobhome.jpg": "/static/media/bobhome.38e9359aa8f9e6ea5b52.jpg",
     "static/media/bob5.jpg": "/static/media/bob5.5afb9ad4232dd45d174e.jpg",
@@ -23,11 +23,11 @@
     "static/media/bob17.jpg": "/static/media/bob17.ce00d67bae26222e3c53.jpg",
     "static/media/bob8.jpg": "/static/media/bob8.437a7d75552e34b5d0e5.jpg",
     "index.html": "/index.html",
-    "main.0346cc2b.css.map": "/static/css/main.0346cc2b.css.map",
-    "main.24b72f89.js.map": "/static/js/main.24b72f89.js.map"
+    "main.f83c8533.css.map": "/static/css/main.f83c8533.css.map",
+    "main.c2254d34.js.map": "/static/js/main.c2254d34.js.map"
   },
   "entrypoints": [
-    "static/css/main.0346cc2b.css",
-    "static/js/main.24b72f89.js"
+    "static/css/main.f83c8533.css",
+    "static/js/main.c2254d34.js"
   ]
 }
