@@ -2,6 +2,7 @@ import './Gallery.css'
 
 const imageContext = require.context('./images/gallery/', true);
 const imageList = imageContext.keys().map(image => imageContext(image));
+console.log(imageList);
 
 function ImageGallery() {
     let columns = [];
